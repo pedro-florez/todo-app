@@ -1,0 +1,63 @@
+<h2> {{ nombre }} </h2>
+
+<dl>
+    <td>Nombre:</td>
+    <dd> {{ nombre }} </dd>
+
+    <td>Edad:</td>
+    <dd>{{ edad }}</dd>
+
+    <td>Método:</td>
+    <dd>{{ getHeroDescription() }}</dd>
+
+    <td>Capitalizado:</td>
+    <dd>{{ capitalizedName }}</dd>
+</dl>
+
+<button
+type="button"
+class="btn btn-primary"
+(click)="changeHeroName()">
+    Cambiar nombre
+</button>
+
+<button
+type="button"
+class="btn btn-primary ms-3"
+(click)="changeHeroAge(1)">
+    Cambiar edad
+</button>
+
+<button
+type="button"
+class="btn btn-success ms-3"
+(click)="resetHero()">
+    Reiniciar
+</button>
+
+<button
+type="button"
+class="btn btn-warning ms-3"
+(click)="toggleJumbotron()">
+    {{ activeJumbotron ? 'Ocultar' : 'Mostrar' }} jumbotron
+</button>
+
+<hr>
+
+<div
+*ngIf="activeJumbotron"
+class="p-5 mb-4 bg-body-tertiary rounded-3">
+
+    <div class="container-fluid py-5">
+
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+
+        <p class="col-md-8 fs-4">
+            Using a series of utilities, you can create this jumbotron, just like the one in
+            previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
+            liking.
+        </p>
+
+    </div>
+
+</div>
