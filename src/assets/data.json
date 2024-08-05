@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Internet Tigo",
+        "amount": 111510,
+        "isCheck": false
+    },
+    {
+        "id": 2,
+        "name": "Pila - ACH",
+        "amount": 468000,
+        "isCheck": false
+    },
+    {
+        "id": 3,
+        "name": "Luz",
+        "amount": 65000,
+        "isCheck": false
+    },
+    {
+        "id": 4,
+        "name": "Casa",
+        "amount": 480000,
+        "isCheck": false
+    },
+    {
+        "id": 5,
+        "name": "Seguro",
+        "amount": 25000,
+        "isCheck": false
+    },
+    {
+        "id": 6,
+        "name": "Préstamo Nequi",
+        "amount": 132000,
+        "isCheck": false
+    }
+]

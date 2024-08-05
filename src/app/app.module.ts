@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { DecimalPipe, registerLocaleData } from '@angular/common';
+import localeCO from '@angular/common/locales/es-CO';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { CounterModule } from './counter/counter.module';
-import { HeroeModule }   from './heroes/heroe.module';
+registerLocaleData(localeCO, 'es-CO');
 
 @NgModule({
     declarations: [
@@ -14,11 +16,9 @@ import { HeroeModule }   from './heroes/heroe.module';
     imports: [
         BrowserModule,
         AppRoutingModule,
-
-        CounterModule,
-        HeroeModule
+        HttpClientModule
     ],
-    providers: [],
+    providers: [DecimalPipe],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
